@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +17,16 @@
             <form class="form">
                 <label2 for="guessField" id="guess">Guess a number</label>
                 <input type="text" id="guessField" class="guessField">
-                <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+                <!-- <input type="submit" id="subt" value="Submit guess" class="guessSubmit"> -->
+                <button id="submit" class="guessSubmit">submit</button>
             </form>
-            <div class="resultParas">
-                <p >Previous Guesses: <span class="guesses"></span></p>
-                <p >Guesses Remaining: <span class="lastResult">10</span></p>
-                <p class="lowOrHi"></p>
+            <div id="resultParas">
+                <p >Previous Guesses: <span id="guesses"></span></p>
+                <p >Guesses Remaining: <span id="lastResult">10</span></p>
+                <p id="lowOrHi"></p>
             </div>
         </div>
     </div>
-    <style src="mean.js"></style>
+    <script src="main.js"></script>
 </body>
 </html>
